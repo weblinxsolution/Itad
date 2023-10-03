@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Itad - My Order</title>
+</head>
+<style>
+    .text-primary {
+        color: #003366 !important;
+    }
+
+    .text__primary {
+        color: #003366 !important;
+    }
+
+    .btn-primary {
+        background-color: #003366 !important;
+    }
+</style>
+
+<body style="background: #141414 ;">
+    <!-- top section start -->
+    <section class="top_sec">
+        <div class="wrapper">
+            <div class="row ">
+                <div class="col-xxl-6 col-lg-8 p-0">
+                    <div class="d-flex gap-lg-4 gap-2 align-items-center icon_sec flex-wrap">
+                        <div>
+                            <div class="d-flex align-items-center gap-2 ">
+                                <div>
+                                    <img src="./assets/img/mess-icon.png" alt="">
+                                </div>
+                                <div>
+                                    abc123@hotmail.com
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex align-items-center gap-2">
+                                <div>
+                                    <img src="./assets/img/phone-icon.png" alt="">
+                                </div>
+                                <div>
+                                    +1 123 456 7890
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex align-items-center gap-2">
+                                <div>
+                                    <img src="./assets/img/location-icon.png" alt="">
+                                </div>
+                                <div>
+                                    Lorem ipsum dolor sit amet consectetur. Dignissim.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-6 col-lg-4 p-0 social_sec d-lg-block d-none">
+                    <div class="d-flex gap-4 justify-content-end">
+                        <div>
+                            <img src="./assets/img/fb-icon.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./assets/img/twitter-icon.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./assets/img/pin-icon.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./assets/img/cam-icon.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./assets/img/you-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- top section End ---->
+
+
+    <!-- Navbar Start -->
+    <section class="nav_sec">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="d-flex flex-wrap wrapper gap-lg-5 justify-content-between mob_tog">
+                <a class="navbar-brand" href="index.html"><img src="./assets/img/logo.png" class="logo" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fa fa-bars text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 head_sec gap-lg-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link" href="product-list.html">PRODUCTS</a> -->
+                            <div class="dropdown" id="myDropDown">
+                                <a class="nav-link product-drp" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    PRODUCTS
+                                </a>
+                                <ul class="dropdown-menu" id="Clickme" aria-labelledby="dropdownMenuButton1">
+                                    <li class="w-100 d-flex justify-content-between align-items-lg-center"
+                                        onclick="myfunc2()">
+                                        <div class="w-100">
+                                            <!-- <a class="dropdown-item  w-100" href="#">Servers</a> -->
+                                            <div class="dropdown itad_drp" id="myDropDown2">
+                                                <a class="dropdown-item  w-100" href="server.html" type="button"
+                                                    id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    Servers
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu2 drp_ul"
+                                                    aria-labelledby="dropdownMenuButton1">
+                                                    <li
+                                                        class="w-100 d-flex   justify-content-around align-items-center">
+                                                        <a class="dropdown-item fs-6 fw-bold  w-100"
+                                                            href="#">Servers</a>
+                                                        <i class="fa fa-angle-down pe-3 text-success "
+                                                            style="font-size: 11px;"></i>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li class="w-100 d-flex justify-content-around align-items-center">
+                                                        <a class="dropdown-item fs-6 fw-bold  w-100"
+                                                            href="#">Servers</a>
+                                                        <i class="fa fa-angle-down pe-3 text-success "
+                                                            style="font-size: 11px;"></i>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <i class="fa fa-angle-right pe-3 text-white " id="anglechange"
+                                            style="font-size: 11px;"></i>
+                                    </li>
+                                    <li class="w-100 d-flex justify-content-around align-items-center">
+                                        <div class="w-100">
+                                            <!-- <a class="dropdown-item  w-100" href="#">Servers</a> -->
+                                            <div class="dropdown itad_drp" id="myDropDown2">
+                                                <a class="dropdown-item  w-100" type="button" id="dropdownMenuButton1"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Storage
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu2 drp_ul"
+                                                    aria-labelledby="dropdownMenuButton1">
+                                                    <li
+                                                        class="w-100 d-flex   justify-content-around align-items-center">
+                                                        <a class="dropdown-item fs-6 fw-bold  w-100"
+                                                            href="#">Servers</a>
+                                                        <i class="fa fa-angle-down pe-3 text-success "
+                                                            style="font-size: 11px;"></i>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li class="w-100 d-flex justify-content-around align-items-center">
+                                                        <a class="dropdown-item fs-6 fw-bold  w-100"
+                                                            href="#">Servers</a>
+                                                        <i class="fa fa-angle-down pe-3 text-success "
+                                                            style="font-size: 11px;"></i>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <i class="fa fa-angle-right pe-3 text-white " id="anglechange"
+                                            style="font-size: 11px;"></i>
+                                    </li>
+                                    <li class="w-100 d-flex justify-content-around align-items-center">
+                                        <div class="w-100">
+                                            <!-- <a class="dropdown-item  w-100" href="#">Servers</a> -->
+                                            <div class="dropdown itad_drp" id="myDropDown2">
+                                                <a class="dropdown-item  w-100" type="button" id="dropdownMenuButton1"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Networking
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu2 drp_ul"
+                                                    aria-labelledby="dropdownMenuButton1">
+                                                    <li
+                                                        class="w-100 d-flex   justify-content-around align-items-center">
+                                                        <a class="dropdown-item fs-6 fw-bold  w-100"
+                                                            href="#">Servers</a>
+                                                        <i class="fa fa-angle-down pe-3 text-success "
+                                                            style="font-size: 11px;"></i>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li class="w-100 d-flex justify-content-around align-items-center">
+                                                        <a class="dropdown-item fs-6 fw-bold  w-100"
+                                                            href="#">Servers</a>
+                                                        <i class="fa fa-angle-down pe-3 text-success "
+                                                            style="font-size: 11px;"></i>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <i class="fa fa-angle-right pe-3 text-white " id="anglechange"
+                                            style="font-size: 11px;"></i>
+                                    </li>
+                                    <li class="w-100 d-flex justify-content-around align-items-center">
+                                        <div class="w-100">
+                                            <!-- <a class="dropdown-item  w-100" href="#">Servers</a> -->
+                                            <div class="dropdown itad_drp" id="myDropDown2">
+                                                <a class="dropdown-item  w-100" type="button" id="dropdownMenuButton1"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Cloud
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu2 drp_ul"
+                                                    aria-labelledby="dropdownMenuButton1">
+                                                    <li
+                                                        class="w-100 d-flex   justify-content-around align-items-center">
+                                                        <a class="dropdown-item fs-6 fw-bold  w-100"
+                                                            href="#">Servers</a>
+                                                        <i class="fa fa-angle-down pe-3 text-success "
+                                                            style="font-size: 11px;"></i>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li class="w-100 d-flex justify-content-around align-items-center">
+                                                        <a class="dropdown-item fs-6 fw-bold  w-100"
+                                                            href="#">Servers</a>
+                                                        <i class="fa fa-angle-down pe-3 text-success "
+                                                            style="font-size: 11px;"></i>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <i class="fa fa-angle-right pe-3 text-white " id="anglechange"
+                                            style="font-size: 11px;"></i>
+                                    </li>
+                                    <li class="w-100 d-flex justify-content-around align-items-center">
+                                        <div class="w-100">
+                                            <!-- <a class="dropdown-item  w-100" href="#">Servers</a> -->
+                                            <div class="dropdown itad_drp" id="myDropDown2">
+                                                <a class="dropdown-item  w-100" href="itad.html" type="button"
+                                                    id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    Itad
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu2 drp_ul"
+                                                    aria-labelledby="dropdownMenuButton1">
+                                                    <li
+                                                        class="w-100 d-flex   justify-content-around align-items-center">
+                                                        <a class="dropdown-item fs-6 fw-bold  w-100"
+                                                            href="#">Servers</a>
+                                                        <i class="fa fa-angle-down pe-3 text-success "
+                                                            style="font-size: 11px;"></i>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li class="w-100 d-flex justify-content-around align-items-center">
+                                                        <a class="dropdown-item fs-6 fw-bold  w-100"
+                                                            href="#">Servers</a>
+                                                        <i class="fa fa-angle-down pe-3 text-success "
+                                                            style="font-size: 11px;"></i>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <i class="fa fa-angle-right pe-3 text-white " id="anglechange"
+                                            style="font-size: 11px;"></i>
+                                    </li>
+                                    <div class="arrow">
+
+                                    </div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="itad.html">ITAD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT US</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex head_btn_sec gap-lg-5 align-items-center flex-wrap gap-4" role="search">
+                        <div>
+                            <input class="form-control me-2" type="search" placeholder="SEARCH" aria-label="Search">
+                        </div>
+                        <div class="d-flex gap-5 media_icon">
+                            <a href="my-profile.html">
+                                <img src="./assets/img/person-icon.png" alt="icon">
+                            </a>
+                            <a href="wishlist.html">
+                                <img src="./assets/img/heart-icon.png" alt="icon">
+                            </a>
+                            <a href="product-cart.html">
+                                <img src="./assets/img/lock-icon.png" alt="icon">
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- Navbar end ---->
+    <section>
+        <div class="container">
+            <div class="row py-5 gap-lg-0 gap-5 ">
+                <div class="col-lg-4">
+                    <div class="side-navigation">
+                        <div class="side-navigation-head">
+                            <h4>Hello Kevin</h4>
+                            <p>Welcome to your Account</p>
+                        </div>
+                        <ul>
+                            <li><a href="my-profile.html"><span class="side-profile-icon"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 32 32" fill="none">
+                                            <rect width="32" height="32" rx="4" fill="#001F3F" />
+                                            <path
+                                                d="M16 17.7526C16.8656 17.7526 17.7117 17.4959 18.4313 17.0151C19.151 16.5342 19.712 15.8507 20.0432 15.0511C20.3744 14.2514 20.4611 13.3714 20.2922 12.5225C20.1234 11.6736 19.7066 10.8938 19.0945 10.2818C18.4825 9.66975 17.7027 9.25295 16.8538 9.08409C16.0049 8.91523 15.1249 9.0019 14.3253 9.33313C13.5256 9.66437 12.8421 10.2253 12.3612 10.9449C11.8804 11.6646 11.6237 12.5108 11.6237 13.3763C11.6237 13.951 11.7369 14.5201 11.9568 15.0511C12.1767 15.582 12.4991 16.0645 12.9055 16.4708C13.3119 16.8772 13.7943 17.1995 14.3253 17.4195C14.8562 17.6394 15.4253 17.7526 16 17.7526ZM16 17.7526C12.1379 17.7526 9 20.093 9 23M16 17.7526C19.8621 17.7526 23 20.093 23 23"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                                        </svg></span> <span>My Profile</span></a></li>
+                            <li><a href="my-order.html"><span class="side-profile-icon"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 32 32" fill="none">
+                                            <rect width="32" height="32" rx="4" fill="#001F3F" />
+                                            <path
+                                                d="M20.8225 13.5001L20.7524 12.5701C20.717 12.1484 20.5228 11.7559 20.2091 11.4719C19.8954 11.1879 19.4856 11.0335 19.0625 11.0401H17.2424M17.2424 11.0401V9.40009C17.2018 8.75009 16.9149 8.14002 16.4402 7.69412C15.9655 7.24822 15.3387 7 14.6875 7C14.0362 7 13.4094 7.24822 12.9347 7.69412C12.46 8.14002 12.1731 8.75009 12.1324 9.40009V11.0401M17.2424 11.0401H12.1324M10.7524 22.5301H9.70246C9.47285 22.5346 9.24479 22.4916 9.03253 22.4039C8.82028 22.3163 8.62839 22.1858 8.46884 22.0206C8.3093 21.8554 8.18554 21.6591 8.10529 21.444C8.02504 21.2288 7.99002 20.9994 8.00244 20.7701L8.61244 12.5701C8.65252 12.1484 8.84948 11.7572 9.16431 11.4738C9.47914 11.1905 9.88891 11.0357 10.3125 11.0401H12.1324M20.8324 18.8601C20.8324 19.3454 20.6396 19.8109 20.2964 20.1541C19.9533 20.4973 19.4878 20.6901 19.0024 20.6901C18.5171 20.6901 18.0516 20.4973 17.7084 20.1541C17.3652 19.8109 17.1724 19.3454 17.1724 18.8601M15.3324 24.3601H22.6724C23.1578 24.3601 23.6233 24.1673 23.9664 23.8241C24.3096 23.4809 24.5024 23.0154 24.5024 22.5301V17.9401C24.5024 17.4547 24.3096 16.9892 23.9664 16.6461C23.6233 16.3029 23.1578 16.1101 22.6724 16.1101H15.3324C14.8471 16.1101 14.3816 16.3029 14.0384 16.6461C13.6952 16.9892 13.5024 17.4547 13.5024 17.9401V22.5301C13.5024 23.0137 13.6939 23.4777 14.0349 23.8206C14.3759 24.1635 14.8388 24.3574 15.3225 24.3601H15.3324Z"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                                        </svg></span> My Orders</a></li>
+                            <li><a href="Wishlist.html"><span class="side-profile-icon"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 32 32" fill="none">
+                                            <rect width="32" height="32" rx="4" fill="#001F3F" />
+                                            <path
+                                                d="M15.9862 10.6654C15.6269 10.2073 15.1767 9.82562 14.663 9.54343C14.1493 9.26125 13.5826 9.08443 12.9974 9.02366C12.4122 8.9629 11.8205 9.01945 11.2581 9.18991C10.6958 9.36037 10.1745 9.64118 9.72567 10.0154C8.77067 10.7882 8.16123 11.8978 8.02769 13.1067C7.89415 14.3156 8.24712 15.5279 9.0111 16.4842C11.0691 18.7067 13.2593 20.8072 15.5703 22.7748C15.6567 22.8659 15.7622 22.9374 15.8796 22.9845C15.9527 23.0052 16.0304 23.0052 16.1035 22.9845C16.2209 22.9374 16.3264 22.8659 16.4128 22.7748C18.7263 20.8099 20.9167 18.7092 22.972 16.4842C23.7467 15.532 24.1065 14.317 23.9726 13.1048C23.8387 11.8927 23.222 10.7819 22.2574 10.0154C21.8071 9.64231 21.2848 9.36251 20.7218 9.19276C20.1588 9.02301 19.5667 8.9668 18.981 9.0275C18.3954 9.08821 17.8282 9.26457 17.3136 9.54602C16.799 9.82748 16.3475 10.2082 15.9862 10.6654Z"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg></span> Wishlist</a></li>
+                            <li><a href="change-password.html">
+                                    <span class="side-profile-icon text-white p-1 me-1 rounded"
+                                        style="background-color: #001F3F;">
+                                        <i class="fa fa-lock "> </i>
+
+                                    </span> Change Password</a></li>
+                            <li><a href="login.html"><span class="side-profile-icon"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 32 32" fill="none">
+                                            <rect width="32" height="32" rx="4" fill="#001F3F" />
+                                            <path
+                                                d="M20.9626 20.8726L25.5426 16.2926M25.5426 16.2926L20.9626 11.7126M25.5426 16.2926H14.5426M14.5426 8.04262H13.4426C12.4656 7.93305 11.4765 8.03536 10.5426 8.34261C10.0232 8.60206 9.60207 9.02319 9.34262 9.54262C9.03537 10.4765 8.93304 11.4656 9.04262 12.4426V20.1426C8.93304 21.1196 9.03537 22.1087 9.34262 23.0426C9.60207 23.562 10.0232 23.9832 10.5426 24.2426C11.4765 24.5499 12.4656 24.6522 13.4426 24.5426H14.5426"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg></span> Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="form-box">
+                        <form action="">
+                            <div class="form-headings padding__responsive">
+                                <h4 class="mb-0"> My Orders</h4>
+                                <div class="d-flex justify-content-between align-items-center flex-wrap mt-3">
+                                    <div>
+                                        <p class="fs-5 mb-0  text-dark">
+                                            Order no: #123456789
+                                        </p>
+                                        <p class="text-muted mb-0">
+                                            Placed on 2 june 2023 2:40 PM
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="mb-0 fs-5 text-dark">
+                                            <span class="text-muted">Total :</span> 143.00
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div class="my-5">
+                                    <div class="order__div">
+                                        <div class="line__order">
+                                        </div>
+                                        <div class="circle__1"></div>
+                                        <div class="content__1">Order Placed</div>
+                                        <div class="circle__2"></div>
+                                        <div class="content__2">In Progress</div>
+                                        <div class="circle__3"></div>
+                                        <div class="content__3">Shipped</div>
+                                        <div class="circle__4"></div>
+                                        <div class="content__4">Delivered</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 flex-wrap pt-3">
+                                    <p class="text-muted mb-0 fw-lighter"> 8 June 2023 3:40 PM</p>
+                                    <p class="text-dark mb-0 fw-normal"> Your Order has been successfully verified</p>
+
+                                </div>
+                            </div>
+                            <div class="form-feilds">
+                                <div class="row mx-0 align-items-center">
+                                    <div class="col-lg-5">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div><img src="assets/img/orderimg.jpg" class="img-fluid rounded-3" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="text-primary fw-bold mb-0 fs-5">
+                                                    Product Name
+                                                </p>
+                                                <p class="text-dark small">
+                                                    Lorem Ipsum dolor
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6 mt-lg-0 mt-3">
+                                        <p class="text-dark text-lg-center text-end">Quantity: <span
+                                                class="fw-bold ps-2 fs-5">1</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 col-6 mt-lg-0 mt-3">
+                                        <p class="text-dark text-end text-lg-end">Price: <span
+                                                class="text__primary fw-bold ps-2 fs-5">$681</span></p>
+                                    </div>
+                                </div>
+                                <div class="row mx-0 align-items-center mt-3 mt-lg-4">
+                                    <div class="col-lg-5">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div><img src="assets/img/orderimg.jpg" class="img-fluid rounded-3" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="text-primary fw-bold mb-0 fs-5">
+                                                    Product Name
+                                                </p>
+                                                <p class="text-dark small">
+                                                    Lorem Ipsum dolor
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6 mt-lg-0 mt-3">
+                                        <p class="text-dark text-lg-center text-end">Quantity: <span
+                                                class="fw-bold ps-2 fs-5">1</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 col-6 mt-lg-0 mt-3">
+                                        <p class="text-dark text-end text-lg-end">Price: <span
+                                                class="text__primary fw-bold ps-2 fs-5">$681</span></p>
+                                    </div>
+                                </div>
+                                <div class="row mx-0 align-items-center mt-3 mt-lg-4 pb-lg-4">
+                                    <div class="col-lg-5">
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div><img src="assets/img/orderimg.jpg" class="img-fluid rounded-3" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="text-primary fw-bold mb-0 fs-5">
+                                                    Product Name
+                                                </p>
+                                                <p class="text-dark small">
+                                                    Lorem Ipsum dolor
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-6 mt-lg-0 mt-3">
+                                        <p class="text-dark text-lg-center text-end">Quantity: <span
+                                                class="fw-bold ps-2 fs-5">1</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 col-6 mt-lg-0 mt-3">
+                                        <p class="text-dark text-end text-lg-end">Price: <span
+                                                class="text__primary fw-bold ps-2 fs-5">$681</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer start -->
+    <section class="foot_sec">
+        <div class="container foot_pad">
+            <div class="row pt-5 pb-3">
+                <div class="col-lg-3 logo_sec">
+                    <div>
+                        <img src="./assets/img/logo.png" class="logo" id="foot_logo" alt="">
+                    </div>
+                    <div class="mt-1">
+                        <p>elementum vulputate ultrices blandit. Congue molestie et varius risus, tristique fermentum
+                            purus nunc sed. Et tristique cursus felis placerat proin aliquam.</p>
+                    </div>
+                    <div class="d-flex social_foot">
+                        <img src="./assets/img/svg/svg/Facebook.svg" alt="">
+                        <img src="./assets/img/svg/svg/Twitter.svg" alt="">
+                        <img src="./assets/img/svg/svg/Pinterest.svg" alt="">
+                        <img src="./assets/img/svg/svg/Instagram.svg" alt="">
+                        <img src="./assets/img/svg/svg/Youtube.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-3 mt-lg-0 mt-3">
+                            <div class="foot_head mt-lg-0 mt-3">
+                                <h2 class="d-flex align-items-center mb-0 gap-1">QUICK LINKS <i
+                                        class="fa fa-angle-down ms-2 d-lg-none d-block"></i></h2>
+                            </div>
+                            <div class="foot_p mt-lg-5 mt-3">
+                                <p>Home</p>
+                                <p>Products</p>
+                                <p>ITAD</p>
+                                <p>Services</p>
+                                <p>About Us</p>
+                                <p>Contact Us</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="foot_head mt-lg-0 mt-3">
+                                <h2>ABOUT</h2>
+                            </div>
+                            <div class="foot_p mt-lg-5 mt-3">
+                                <p>How it work</p>
+                                <p>Our Packages</p>
+                                <p>Promotions</p>
+                                <p>Refer A Friend</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="foot_head mt-lg-0 mt-3">
+                                <h2 class="d-flex align-items-center mb-0 gap-1">HELP CENTER<i
+                                        class="fa fa-angle-down ms-2 d-lg-none d-block"></i></h2>
+                            </div>
+                            <div class="foot_p mt-lg-5 mt-3">
+                                <p>Payments</p>
+                                <p>Shipping</p>
+                                <p>Product Returns</p>
+                                <p>FAQs</p>
+                                <p>Checkout</p>
+                                <p>Other Issues</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="foot_head mt-lg-0 mt-3">
+                                <h2 class="d-flex align-items-center  mb-0 gap-1">OUR NEWSLETTER<i
+                                        class="fa fa-angle-down ms-2 d-lg-none d-block"></i></h2>
+                            </div>
+                            <div class="foot_p mt-lg-5 mt-3">
+                                <p class="new_p">Subscribe to our newsletter to get updates about <br> our grand offers.
+                                </p>
+                            </div>
+                            <div>
+                                <div class="d-flex foot_input mt-lg-5 mt-2">
+                                    <input type="text" placeholder="Enter your email-address">
+                                    <button class="send_btn">SEND</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: white; ">
+            <div class="res_sec d-flex justify-content-center pt-lg-3 pt-2">
+                <p>© 2023. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+    <!-- footer end ---->
+    <script>
+        $('.foot_head').click(function () {
+            if ($(window).width() < 560) {
+
+                $(this).next().slideToggle();
+            }
+        })
+    </script>
+
+    <script>
+        $('.foot_head').click(function () {
+            // $(this).next().slideToggle();
+        })
+        $('.itad_drp').hover(function () {
+            $('.drp_ul').hide();
+            $(this).children('ul').show();
+        });
+        $('.product-drp').click(function () {
+            $('.drp_ul').hide();
+        })
+
+        $('.itad_drp a').click(function () {
+            var link = $(this).attr('href');
+            window.location.href = link;
+        })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
